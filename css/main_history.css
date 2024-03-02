@@ -48,7 +48,6 @@ ul, li {
 	background: url('../img/header_bg_history.jpg') no-repeat center top;
 	padding-top: 57px;
 	color: #fff;
-	padding-bottom: 322px;
 }
 
 header a {
@@ -116,7 +115,11 @@ header a {
 	position: relative;
 	left: 47%;
 }
-
+.logo {
+	margin-right: 30px;
+	width: 100px;
+	height: 100px;
+}
 .description {
 	display: -webkit-flex;
 	justify-content: space-between;
@@ -164,4 +167,31 @@ description p {
 .btn-outline-info:hover {
   color: green;
   border-color: black;
+}
+.choose-parts{
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 500px;
+
+}
+.choose-space{
+	background-color: lightgoldenrodyellow;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 10px 10px 10px 10px;
+}
+.add-btn{
+	height: 50%;
+	width: 70px
+}
+.icon-img{
+	height: 50%;
 }
