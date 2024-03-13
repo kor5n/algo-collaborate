@@ -186,34 +186,37 @@ description p {
 	flex-direction: row;
 	align-items: center;
 	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 5px;
 }
 .add-btn{
-	position: relative;
+	position: absolute;
 	text-align: center;
-	height: 60%;
+	height: 42px;
 	width: 90px;
 	background: white;
 	border-radius: 5px;
-	left: 500px;
-	border: 0.5px double lightslategrey
+	left: 1200px;
+	border: 0.5px double lightslategrey;
 }
 .icon-img{
-	height: 50%;
-	margin-left: 150px;
-	height: 70%;
+	position: absolute;
+	height: 49px;
 	border-radius: 6px;
+	left: 445px;
 }
 .descr-part{
+	position: absolute;
 	margin-top: 15px;
-	margin-left: 70px;
-	height: 60%;
+	left: 545px;
+	height: 42px;
 }
 .part-name{
+	position: absolute;
 	margin-top: 15px;
-	margin-left: 100px;
-	height: 60%;
+	left: 195px;
+	height: 42px;
 }
-
-/*.background-img2{
-	width: 100vw;
-}*/
+.info{
+	padding-top: 40px;
+	text-align: center;
+}
