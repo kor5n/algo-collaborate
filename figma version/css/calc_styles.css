@@ -1,0 +1,135 @@
+main {
+    position: relative;
+    top: 50px;  
+}
+
+.from-calc-to-main-page-link {
+    font-size: 23px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #FFFFFF;
+}
+
+.calc-btns {
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    padding: 10px;
+}
+
+.calc-btn {
+    width: 80vw;
+    padding: 10px;
+    background-color: #8C8C8C;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.component-icon {
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.component-button {
+    display: block;
+    margin-left: auto;
+    border-radius: 10px;
+    font-size: 23px;
+    background-color: #575757;
+    padding-left: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.component-button:hover {
+    background-color: #404040;
+}
+
+.component-button:active {
+    background-color: #333333;
+}
+
+.fa-caret-up {
+    padding: 10px;
+}
+
+.dropdown {
+    background-color: #555555;
+    border-radius: 0 0 10px 10px;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.dropdown-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    text-decoration: underline;
+}
+
+.dropdown-btn img {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.dropdown-btn p {
+    padding: 5px;
+}
+
+.total-items {
+    margin: 0 auto;
+    width: 80vw;
+    font-size: 18px;
+}
+
+#count-total-btn {
+    padding: 10px;
+    background-color: #8C8C8C;
+    border: none;
+    border-radius: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#count-total-btn:hover {
+    background-color: #737373;
+}
+
+#count-total-btn:active {
+    background-color: #656565;
+}
+
+.total-cont {
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.total-cont p {
+    align-self: center;
+    margin-left: 5px;
+}
