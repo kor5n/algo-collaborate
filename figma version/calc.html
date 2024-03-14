@@ -14,234 +14,275 @@
 
     <body>
         <header>
+            <div class="flash-message">
+                <p>Это комплектующее уже выбрано. Если вы хотите выбрать другое, пролистайте вниз и нажмите на "очистить".</p>
+                <button id="dismiss-flash-message"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <a class="from-calc-to-main-page-link" href="main.html">На главную</a>
         </header>
       
         <main>
             <div class="text-cont-2">
                 <h4>Калькулятор цен на комплектующие</h1>
-                <p style="margin-top: 5px;">Звёздочкой * обозначены обязательные комплектующие</p>
+                <p style="margin-top: 5px;">Звёздочкой * обозначены обязательные комплектующие(комплектующие, без которых нормальная работы компьютера невозможна).</p>
             </div>
             <div class="calc-buttons">
                 <div class="calc-btn">
-                    <p class="component-name">Процессор*<img src="img/processor.png" class="component-icon" alt="Иконка процессора"></p>
-                    <button id="show-processors" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Процессор*<img src="img/processor.png" class="component-icon" alt="Иконка процессора"></p>
+                        <button id="show-processors" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>                
                 <div class="dropdown" id="processors-dropdown">
                     <div class="dropdown-btn" data-value="20999">
                         <img src="img/processor_example_1.jpg">
-                        <p>Процессор Intel Core i5-12500 OEM [LGA 1700, 6 x 3 ГГц, L2 - 7.5 МБ, L3 - 18 МБ, 2 х DDR4, DDR5-4800 МГц, Intel UHD Graphics 770, TDP 117 Вт]</p>
+                        <p class="name">Процессор Intel Core i5-12500 OEM [LGA 1700, 6 x 3 ГГц, L2 - 7.5 МБ, L3 - 18 МБ, 2 х DDR4, DDR5-4800 МГц, Intel UHD Graphics 770, TDP 117 Вт]</p>
                         <p>20999₽</p>
                     </div>                   
                     <div class="dropdown-btn" data-value="19999"> 
                         <img src="img/processor_example_2.jpg">
-                        <p>Процессор AMD Ryzen 7 5700X BOX [AM4, 8 x 3.4 ГГц, L2 - 4 МБ, L3 - 32 МБ, 2 х DDR4-3200 МГц, TDP 65 Вт]</p>
+                        <p class="name">Процессор AMD Ryzen 7 5700X BOX [AM4, 8 x 3.4 ГГц, L2 - 4 МБ, L3 - 32 МБ, 2 х DDR4-3200 МГц, TDP 65 Вт]</p>
                         <p>19999₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Материнская плата*<img src="img/motherboard.jpg" class="component-icon" alt="Иконка материнской платы"></p>
-                    <button id="show-motherboards" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                    
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Материнская плата*<img src="img/motherboard.jpg" class="component-icon" alt="Иконка материнской платы"></p>
+                        <button id="show-motherboards" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="motherboards-dropdown">
                     <div class="dropdown-btn" data-value="12599">
                         <img src="img/motherboard_example_1.jpg">
-                        <p>Материнская плата ASUS PRIME B760M-K [LGA 1700, Intel B760, 2xDDR5-5600 МГц, 1xPCI-Ex16, 2xM.2, Micro-ATX]</p>
+                        <p class="name">Материнская плата ASUS PRIME B760M-K [LGA 1700, Intel B760, 2xDDR5-5600 МГц, 1xPCI-Ex16, 2xM.2, Micro-ATX]</p>
                         <p>12599₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="12699"> 
                         <img src="img/motherboard_example_2.png">
-                        <p>Материнская плата GIGABYTE B450 AORUS ELITE V2 [AM4, AMD B450, 4xDDR4-2933 МГц, 2xPCI-Ex16, 2xM.2, Standard-ATX]</p>
+                        <p class="name">Материнская плата GIGABYTE B450 AORUS ELITE V2 [AM4, AMD B450, 4xDDR4-2933 МГц, 2xPCI-Ex16, 2xM.2, Standard-ATX]</p>
                         <p>12699₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Корпус ПК*<img src="img/computer_case.jpg" class="component-icon" alt="Иконка корпуса ПК"></p>
-                    <button id="show-computer-cases" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                   
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Корпус ПК*<img src="img/computer_case.jpg" class="component-icon" alt="Иконка корпуса ПК"></p>
+                        <button id="show-computer-cases" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button> 
+                    </div>
+                    <p class="component-choice">Не выбрано</p>                  
                 </div>
                 <div class="dropdown" id="computer-cases-dropdown">
                     <div class="dropdown-btn" data-value="3599">
                         <img src="img/computer_case_example_1.jpg">
-                        <p>Корпус AeroCool Streak [ACCM-PV19012.11] черный [Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A, RGB, 1 x 80 мм]</p>
+                        <p class="name">Корпус AeroCool Streak [ACCM-PV19012.11] черный [Mid-Tower, Micro-ATX, Mini-ITX, Standard-ATX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A, RGB, 1 x 80 мм]</p>
                         <p>3599₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="3899"> 
                         <img src="img/computer_case_example_2.jpg">
-                        <p>Корпус ARDOR GAMING Rare Minicase MS2 BG черный [Mini-Tower, Micro-ATX, Mini-ITX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A]</p>
+                        <p class="name">Корпус ARDOR GAMING Rare Minicase MS2 BG черный [Mini-Tower, Micro-ATX, Mini-ITX, USB 2.0 Type-A, USB 3.2 Gen1 Type-A]</p>
                         <p>3899₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Видеокарта<img src="img/GPU.jpg" class="component-icon" alt="Иконка видеокарты"></p>
-                    <button id="show-GPUs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Видеокарта<img src="img/GPU.jpg" class="component-icon" alt="Иконка видеокарты"></p>
+                        <button id="show-GPUs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="GPUs-dropdown">
                     <div class="dropdown-btn" data-value="60999">
                         <img src="img/GPU_example_1.jpg">
-                        <p>Видеокарта ASUS AMD Radeon RX 7700 XT TUF Gaming OC Edition [TUF-RX7700XT-O12G GAMING] [PCI-E 4.0 12 ГБ GDDR6, 192 бит, 3 x DisplayPort, HDMI, GPU 1900 МГц]</p>
+                        <p class="name">Видеокарта ASUS AMD Radeon RX 7700 XT TUF Gaming OC Edition [TUF-RX7700XT-O12G GAMING] [PCI-E 4.0 12 ГБ GDDR6, 192 бит, 3 x DisplayPort, HDMI, GPU 1900 МГц]</p>
                         <p>60999₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="31999"> 
                         <img src="img/GPU_example_2.png">
-                        <p>Видеокарта GIGABYTE GeForce RTX 3050 EAGLE OC [GV-N3050EAGLE OC-8GD] [PCI-E 4.0 8 ГБ GDDR6, 128 бит, 2 x DisplayPort, 2 x HDMI, GPU 1552 МГц]</p>
+                        <p class="name">Видеокарта GIGABYTE GeForce RTX 3050 EAGLE OC [GV-N3050EAGLE OC-8GD] [PCI-E 4.0 8 ГБ GDDR6, 128 бит, 2 x DisplayPort, 2 x HDMI, GPU 1552 МГц]</p>
                         <p>31999₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Кулер*<img src="img/cooler.jpg" class="component-icon" alt="Иконка кулера"></p>
-                    <button id="show-coolers" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                    
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Кулер*<img src="img/cooler.jpg" class="component-icon" alt="Иконка кулера"></p>
+                        <button id="show-coolers" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                    
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="coolers-dropdown">
                     <div class="dropdown-btn" data-value="1550">
                         <img src="img/cooler_example_1.jpg">
-                        <p>Кулер для процессора ID-COOLING SE-903-XT [основание - алюминий\медь, 2200 об/мин, 25.8 дБ, 4 pin, подсветка, 130 Вт]</p>
+                        <p class="name">Кулер для процессора ID-COOLING SE-903-XT [основание - алюминий\медь, 2200 об/мин, 25.8 дБ, 4 pin, подсветка, 130 Вт]</p>
                         <p>1550₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="3699"> 
                         <img src="img/cooler_example_2.jpg">
-                        <p>Система охлаждения DarkFlash Radiant DCS 120 [120 мм - одна секция, SATA Power (15 pin), радиатор - алюминий]</p>
+                        <p class="name">Система охлаждения DarkFlash Radiant DCS 120 [120 мм - одна секция, SATA Power (15 pin), радиатор - алюминий]</p>
                         <p>3699₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Оперативная память*<img src="img/RAM.jpg" class="component-icon" alt="Иконка оперативной памяти"></p>
-                    <button id="show-RAMs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Оперативная память*<img src="img/RAM.jpg" class="component-icon" alt="Иконка оперативной памяти"></p>
+                        <button id="show-RAMs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="RAMs-dropdown">
                     <div class="dropdown-btn" data-value="3699">
                         <img src="img/RAM_example_1.jpg">
-                        <p>Оперативная память Patriot Viper Steel [PVS416G320C6] 16 ГБ [DDR4, 16 ГБx1 шт, 3200 МГц, 16-20-20-40]</p>
+                        <p class="name">Оперативная память Patriot Viper Steel [PVS416G320C6] 16 ГБ [DDR4, 16 ГБx1 шт, 3200 МГц, 16-20-20-40]</p>
                         <p>3699₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="6199"> 
                         <img src="img/RAM_example_2.jpg">
-                        <p>Оперативная память ADATA XPG Lancer Blade [AX5U5600C4616G-SLABBK] 16 ГБ [DDR5, 16 ГБx1 шт, 5600 МГц, 46-45-45]</p>
+                        <p class="name">Оперативная память ADATA XPG Lancer Blade [AX5U5600C4616G-SLABBK] 16 ГБ [DDR5, 16 ГБx1 шт, 5600 МГц, 46-45-45]</p>
                         <p>6199₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Накопители*<img src="img/memory_storage.jpg" class="component-icon" alt="Иконка накопителя памяти"></p>
-                    <button id="show-memory-storages" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Накопители*<img src="img/memory_storage.jpg" class="component-icon" alt="Иконка накопителя памяти"></p>
+                        <button id="show-memory-storages" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="memory-storages-dropdown">
                     <div class="dropdown-btn" data-value="3699">
                         <img src="img/memory_storage_example_1.jpg">
-                        <p>1000 ГБ 2.5"SATA накопитель QUMO Novation [Q3DT-1TSKF] [SATA, чтение - 560 Мбайт/сек, запись - 520 Мбайт/сек, 3D NAND 3 бит TLC]</p>
+                        <p class="name">1000 ГБ 2.5"SATA накопитель QUMO Novation [Q3DT-1TSKF] [SATA, чтение - 560 Мбайт/сек, запись - 520 Мбайт/сек, 3D NAND 3 бит TLC]</p>
                         <p>3699₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="6799"> 
                         <img src="img/memory_storage_example_2.jpg">
-                        <p>2 ТБ Жесткий диск Seagate SkyHawk [ST2000VX016] [SATA III, 6 Гбит/с, кэш память - 256 МБ]</p>
+                        <p class="name">2 ТБ Жесткий диск Seagate SkyHawk [ST2000VX016] [SATA III, 6 Гбит/с, кэш память - 256 МБ]</p>
                         <p>6799₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Блок питания*<img src="img/power_unit.jpg" class="component-icon" alt="Иконка блока питания"></p>
-                    <button id="show-power-units" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Блок питания*<img src="img/power_unit.jpg" class="component-icon" alt="Иконка блока питания"></p>
+                        <button id="show-power-units" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="power-units-dropdown">
                     <div class="dropdown-btn" data-value="10999">
                         <img src="img/power_unit_example_1.jpg">
-                        <p>Блок питания Cougar GX 1050W [CGR GX-1050] [1050 Вт, 80+ Gold, APFC, 20 + 4 pin, 4+4 pin, 8 pin CPU, 10 SATA, 6+2 pin x6 PCI-E]</p>
+                        <p class="name">Блок питания Cougar GX 1050W [CGR GX-1050] [1050 Вт, 80+ Gold, APFC, 20 + 4 pin, 4+4 pin, 8 pin CPU, 10 SATA, 6+2 pin x6 PCI-E]</p>
                         <p>10999₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="17899"> 
                         <img src="img/power_unit_example_2.jpg">
-                        <p>Блок питания Thermaltake Toughpower PF1 1050W [PS-TPD-1050FNFAPE-1] [1050 Вт, 80+ Platinum, APFC, 24 pin, 4+4 pin x2 CPU, 12 SATA, 6+2 pin x8 PCI-E]</p>
+                        <p class="name">Блок питания Thermaltake Toughpower PF1 1050W [PS-TPD-1050FNFAPE-1] [1050 Вт, 80+ Platinum, APFC, 24 pin, 4+4 pin x2 CPU, 12 SATA, 6+2 pin x8 PCI-E]</p>
                         <p>17899₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Монитор<img src="img/monitor.jpg" class="component-icon" alt="Иконка монитора"></p>
-                    <button id="show-monitors" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Монитор<img src="img/monitor.jpg" class="component-icon" alt="Иконка монитора"></p>
+                        <button id="show-monitors" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>                   
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="monitors-dropdown">
                     <div class="dropdown-btn" data-value="13999">
                         <img src="img/monitor_example_1.jpg">
-                        <p>23.6" Монитор Acer Nitro ED240QSbmiipx черный [1920x1080 (FullHD)@165 Гц, VA, LED, 3000:1, 250 Кд/м², 178°/178°, DisplayPort 1.4, HDMI 2.0 x2, изогнутый: 1500R, AMD FreeSync Premium]</p>
+                        <p class="name">23.6" Монитор Acer Nitro ED240QSbmiipx черный [1920x1080 (FullHD)@165 Гц, VA, LED, 3000:1, 250 Кд/м², 178°/178°, DisplayPort 1.4, HDMI 2.0 x2, изогнутый: 1500R, AMD FreeSync Premium]</p>
                         <p>13999₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="14999"> 
                         <img src="img/monitor_example_2.jpg">
-                        <p>23.6" Монитор MSI G2422C черный [1920x1080 (FullHD)@180 Гц, VA, LED, 3000:1, 250 Кд/м², 178°/178°, DisplayPort 1.2a, HDMI 2.0b x2, изогнутый, Adaptive-Sync]</p>
+                        <p class="name">23.6" Монитор MSI G2422C черный [1920x1080 (FullHD)@180 Гц, VA, LED, 3000:1, 250 Кд/м², 178°/178°, DisplayPort 1.2a, HDMI 2.0b x2, изогнутый, Adaptive-Sync]</p>
                         <p>14999₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Клавиатура<img src="img/keyboard.jpg" class="component-icon" alt="Иконка клавиатуры"></p>
-                    <button id="show-keyboards" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Клавиатура<img src="img/keyboard.jpg" class="component-icon" alt="Иконка клавиатуры"></p>
+                        <button id="show-keyboards" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="keyboards-dropdown">
                     <div class="dropdown-btn" data-value="1599">
                         <img src="img/keyboard_example_1.jpg">
-                        <p>Клавиатура проводная DEXP Strike [механическая Red, клавиш - 61, USB, черная]</p>
+                        <p class="name">Клавиатура проводная DEXP Strike [механическая Red, клавиш - 61, USB, черная]</p>
                         <p>1599₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="1999"> 
                         <img src="img/keyboard_example_2.jpg">
-                        <p>Клавиатура проводная SVEN KB-G9300 [SV-018245] [механическая Outemu Blue, клавиш - 104, USB, черная]</p>
+                        <p class="name">Клавиатура проводная SVEN KB-G9300 [SV-018245] [механическая Outemu Blue, клавиш - 104, USB, черная]</p>
                         <p>1999₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Мышь<img src="img/mouse.jpg" class="component-icon" alt="Иконка мыши"></p>
-                    <button id="show-mouses" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Мышь<img src="img/mouse.jpg" class="component-icon" alt="Иконка мыши"></p>
+                        <button id="show-mouses" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="mouses-dropdown">
                     <div class="dropdown-btn" data-value="2750">
                         <img src="img/mouse_example_1.jpg">
-                        <p>Мышь проводная A4Tech XL-747H черный [3600 dpi, USB Type-A, кнопки - 7]</p>
+                        <p class="name">Мышь проводная A4Tech XL-747H черный [3600 dpi, USB Type-A, кнопки - 7]</p>
                         <p>2750₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="2999"> 
                         <img src="img/mouse_example_2.jpg">
-                        <p>Мышь проводная A4Tech XL-750BK черный [3600 dpi, USB Type-A, кнопки - 7]</p>
+                        <p class="name">Мышь проводная A4Tech XL-750BK черный [3600 dpi, USB Type-A, кнопки - 7]</p>
                         <p>2999₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">Колонки<img src="img/speakers.jpg" class="component-icon" alt="Иконка колонок"></p>
-                    <button id="show-speakers" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">Колонки<img src="img/speakers.jpg" class="component-icon" alt="Иконка колонок"></p>
+                        <button id="show-speakers" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="speakers-dropdown">
                     <div class="dropdown-btn" data-value="8799">
                         <img src="img/speakers_example_1.jpg">
-                        <p>Аудиосистема LG XBOOM LK72B [формат акустики-2.1, 40 Вт, беспроводной ПДУ, Bluetooth, SD, питание - сеть 220 В]</p>
+                        <p class="name">Аудиосистема LG XBOOM LK72B [формат акустики-2.1, 40 Вт, беспроводной ПДУ, Bluetooth, SD, питание - сеть 220 В]</p>
                         <p>8799₽</p>
                     </div>
                     <div class="dropdown-btn" data-value="1899"> 
                         <img src="img/speakers_example_2.jpg">
-                        <p>Колонки AULA N-189 [формат акустики-2.1, 11 Вт, питание - USB порт]</p>
+                        <p class="name">Колонки AULA N-189 [формат акустики-2.1, 11 Вт, питание - USB порт]</p>
                         <p>1899₽</p>
                     </div>
                 </div>
                 <div class="calc-btn">
-                    <p class="component-name">ОС<img src="img/OS.jpg" class="component-icon" alt="Иконка ОС"></p>
-                    <button id="show-OSs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    <div class="component-name-and-btn">
+                        <p class="component-name">ОС<img src="img/OS.jpg" class="component-icon" alt="Иконка ОС"></p>
+                        <button id="show-OSs" class="component-button">Добавить<i class="fa-solid fa-caret-up"></i></button>
+                    </div>
+                    <p class="component-choice">Не выбрано</p>
                 </div>
                 <div class="dropdown" id="OSs-dropdown">
                     <div class="dropdown-btn" data-value="5999">
                         <img src="img/OS_example_1.jpg">
-                        <p>Microsoft Windows 10 Home 32/64-bit Box(Коробочная версия)</p>
-                        <p>5999₽</p>
+                        <p class="name">Microsoft Windows 10 Home 32/64-bit Box(Коробочная версия)</p>
+                        <p>5999₽</p>                     
                     </div>
                     <div class="dropdown-btn" data-value="3999"> 
                         <img src="img/OS_example_2.jpg">
-                        <p>Операционная система Uncom OS Домашняя 64 бита, FPP, BOX, USB-флеш накопитель</p>
+                        <p class="name">Операционная система Uncom OS Домашняя 64 бита, FPP, BOX, USB-флеш накопитель</p>
                         <p>3999₽</p>
                     </div>
-                </div>
-            </div>
-            <div class="total-items">
-                <p id="total-processor">Процессор: не выбрано</p>
-                <p id="total-motherboard">Материнская плата: не выбрано</p>
-            </div>
+                </div>               
+            </div>            
             <div class="total-cont">
-                <button id="count-total-btn">Посчитать цену</button>
-                <p>Итого: 0₽</p>
+                <button id="clear-total-btn">Очистить</button>
+                <p id="total-number" data-total-number="0">Итого: 0₽</p>
             </div>
         </main>
-
+        <footer>
+            <p style="text-align: center; margin-top: 30px; font-size: 16px;">Все права защищены ©2024</p>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
