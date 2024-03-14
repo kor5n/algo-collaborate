@@ -3,6 +3,48 @@ main {
     top: 50px;  
 }
 
+.flash-message {
+    font-size: 23px;
+    transition: 0.4s;
+    opacity: 0;
+    background-color: #d12115;
+    border: 3px solid #ed7a72;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90vw;
+    position: fixed;
+    top: 50px;
+    left: 5vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flash-message p {
+    color: #fca39d;
+    margin-left: 2px;
+}
+
+#dismiss-flash-message {
+    background-color: #f5190a;
+    border: none;
+    font-size: 27px;
+    padding: 10px 15px 6px 15px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+#dismiss-flash-message:hover {
+    background-color: #da180a;
+}
+
+#dismiss-flash-message:active {
+    background-color: #c11509;
+}
+
+
 .from-calc-to-main-page-link {
     font-size: 23px;
     position: absolute;
@@ -19,7 +61,7 @@ main {
 }
 
 .calc-btn {
-    width: 80vw;
+    width: 85vw;
     padding: 10px;
     background-color: #8C8C8C;
     border-radius: 10px;
@@ -27,10 +69,14 @@ main {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
-    flex-wrap: nowrap;
     font-size: 23px;
     cursor: pointer;
+}
+
+.component-name-and-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .component-icon {
@@ -66,7 +112,7 @@ main {
 .dropdown {
     background-color: #555555;
     border-radius: 0 0 10px 10px;
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
     margin-top: -10px;
 }
@@ -94,28 +140,28 @@ main {
 
 .dropdown-btn p {
     padding: 5px;
+    align-self: center;
 }
 
-.total-items {
-    margin: 0 auto;
-    width: 80vw;
-    font-size: 18px;
+.dropdown-btn p:last-child {
+    font-size: 20px;
 }
 
-#count-total-btn {
+#count-total-btn, #clear-total-btn {
     padding: 10px;
     background-color: #8C8C8C;
     border: none;
     border-radius: 10px;
     font-size: 23px;
     cursor: pointer;
+    margin: 3px;
 }
 
-#count-total-btn:hover {
+#count-total-btn:hover, #clear-total-btn:hover {
     background-color: #737373;
 }
 
-#count-total-btn:active {
+#count-total-btn:active, #clear-total-btn:active {
     background-color: #656565;
 }
 

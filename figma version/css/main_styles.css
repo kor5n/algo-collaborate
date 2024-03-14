@@ -10,6 +10,7 @@
 
 body {
     background: #434343;
+    margin-bottom: 10px;
 }
 
 a {
@@ -98,5 +99,17 @@ a:hover {
     margin-bottom: 15px;
     object-fit: contain;
     width: 90vw;
+    height: 500px;
     align-items: center;
+}
+
+.contacts {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.tel {
+    color: #FFFFFF;
 }
