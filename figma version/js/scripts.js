@@ -1,11 +1,11 @@
 $(document).ready(function() {
     let total = 0;
 
-    $(".flash-message").toggle()
+    $(".flash-message").toggle();
     $(".dropdown").hide();
 
     $("#dismiss-flash-message").click(() => {
-        $(".flash-message").toggle()
+        $(".flash-message").toggle();
     });
 
     $(".calc-btn").click(function() {
