@@ -164,11 +164,8 @@ footer {
 }
 
 .cart-item {
-    flex-wrap: nowrap;
-}
-
-.cart-item {
     flex-wrap: wrap;
+    cursor: default;
 }
 
 .name:hover {
